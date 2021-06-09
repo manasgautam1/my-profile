@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="home">
+      <video src="images/video.mov" autoplay loop muted></video>
+
+      <div class="overlay">
+        <div class="home">
+          <div class="intro">
+            <img src="images/me.jpg" class="my-icon" alt="" />
+            <h1>Hi, I'm Manas Gautam</h1>
+            <h2 class="lead">A MERN Stack Developer</h2>
+            <div class="buttons">
+              <a href="#contact" class="btn btn-primary left"> CONTACT ME </a>
+              <a href="#projects" class="btn btn-primary"> MY PROJECTS </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1>ABOUT ME</h1>
+      <hr />
+      <div class="flex">
+        <div>
+          <p>
+            Hey, Manas Gautam here I am a college student and a MERN Stack
+            Developer.
+          </p>
+          <p>
+            Currently I'm studying in JSSATE, Noida and pursuing B.Tech in IT
+            branch.
+          </p>
+          <p>
+            I am doing web developmemt from last one year and have accquired
+            many skills such as HTML, CSS(including SASS), JavaScript,
+            Bootstrap, Materialze, Jquery, Node.js, Express.js, Mongoose and
+            ReactJS.
+          </p>
+          <p>
+            Also I have a good knowledge of DSA and have good problem solving
+            skill. Have done some competitive programming also in C/C++
+            language.
+          </p>
+        </div>
+        <div>
+          <img src="images/skills-pic.jpg" alt="" />
+        </div>
+      </div>
+      <div class="certi">
+        <h2>Following are my certifications :</h2>
+        <ul>
+          <li>
+            1. The Complete 2021 Web Development Bootcamp
+            <a
+              href="https://www.udemy.com/certificate/UC-ecc9ca6a-2261-45c5-ad39-dcf90214c2e4/"
+              target="_blank"
+              >Click Here...</a
+            >
+          </li>
+          <li>
+            2. FreeCodeCamp: JavaScript Algorithms and Data Structure
+            <a
+              href="https://freecodecamp.org/certification/manasgautam1/javascript-algorithms-and-data-structures"
+              target="_blank"
+              >Click Here...</a
+            >
+          </li>
+          <li>
+            3. FreeCodeCamp: Responsive Web Design
+            <a
+              href="https://freecodecamp.org/certification/manasgautam1/responsive-web-design"
+              target="_blank"
+              >Click Here...</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h1>My Projects</h1>
+      <hr />
+      <p class="lead">Here are some of my projects...</p>
+      <div class="cards">
+        <div class="card">
+          <div class="img img1"></div>
+          <div class="content">
+            <h3>Meal Finder</h3>
+            <a
+              href="https://manasgautam1.github.io/Meal-Finder/"
+              target="_blank"
+              class="btn btn-project"
+              >Show More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="img img2"></div>
+          <div class="content">
+            <h3>Netflix Static Clone</h3>
+            <a
+              href="https://manasgautam1.github.io/netflixclone/"
+              class="btn btn-project"
+              >Show More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="img img3"></div>
+          <div class="content">
+            <h3>Form Validator</h3>
+            <a
+              href="https://manasgautam1.github.io/Form-Validator/"
+              class="btn btn-project"
+              >Show More</a
+            >
+          </div>
+        </div>
+        <div class="card">
+          <div class="img img4"></div>
+          <div class="content">
+            <h3>Hangman Game</h3>
+            <a href="" class="btn btn-project">Show More</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h1>CONTACT ME</h1>
+        <hr />
+        <p class="lead">Here is how you can reach me</p>
+        <form action="POST" data-netlify="true">
+          <div class="grid">
+            <input type="text" placeholder="Name" name="Name" />
+            <input type="email" placeholder="Email Address" name="email" />
+          </div>
+          <div class="grid">
+            <input type="text" placeholder="Subject" name="subject" />
+            <input type="number" placeholder="Phone Number" name="phone" />
+          </div>
+          <textarea
+            id="textarea"
+            placeholder="Enter Message"
+            name="message"
+          ></textarea>
+          <div data-netlify-recaptcha="true">
+          </div>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; Manas Gautam</p>
+      <ul>
+        <li>
+          <a href="https://github.com/manasgautam1" class="footer-links"
+            ><i class="fab fa-github"></i
+          ></a>
+        </li>
+        <li>
+          <a href="#" class="footer-links"><i class="fab fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#" class="footer-links"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#" class="footer-links"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

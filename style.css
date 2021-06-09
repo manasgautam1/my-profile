@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+img {
+  width: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn {
+  cursor: pointer;
+  border: none;
+  transform: scale(1);
+  transition: all 0.2s ease-in;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 0.85rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  border-radius: 10px;
+}
+.btn-primary:hover {
+  background-color: #ffbc00;
+}
+.btn:focus {
+  outline: none;
+}
+.lead {
+  color: #ffbc00;
+  margin-bottom: 1.25rem;
+}
+/* INDEX PAGE */
+#home {
+  height: 100vh;
+  position: relative;
+  border-bottom: 3px solid #ffbc00;
+}
+video {
+  min-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+.my-icon {
+  border-radius: 50%;
+  width: 250px;
+}
+.home {
+  width: 100%;
+  height: 100vh;
+}
+.intro {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.intro > h1 {
+  font-weight: 700;
+  color: #fff;
+  font-size: 3.5rem;
+}
+.intro > h2 {
+  font-size: 1.5rem;
+}
+.intro > p {
+  font-size: 0.85rem;
+  margin: 1.25rem 0;
+}
+.btn.left {
+  margin-right: 2rem;
+}
+
+/* ABOUT */
+#about,
+#projects,
+#contact {
+  padding: 2rem;
+}
+
+#about h1,
+#projects h1,
+#contact h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+#about hr,
+#projects hr,
+#contact hr {
+  border: none;
+  border-bottom: 3px solid #ffbc00;
+  width: 200px;
+  margin: 0 auto 3rem;
+}
+#about .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .flex p {
+  font-size: 1.35rem;
+  margin-bottom: 1.25rem;
+}
+#about .certi {
+  background-color: #f4f4f4;
+  display: block;
+  width: 80%;
+  margin: 1.25rem auto;
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 1rem;
+}
+
+#about .certi h2 {
+  margin-bottom: 1.25rem;
+}
+#about .certi li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+#about .certi a {
+  color: #ffbc00;
+}
+
+/*Projects*/
+#projects {
+  background-color: #f4f4f4;
+  padding-bottom: 3.5rem;
+}
+#projects p.lead,
+#contact p.lead {
+  color: #ffbc00;
+  text-align: center;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+#projects .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+#projects .card {
+  background-color: #999;
+  border-radius: 10px;
+}
+#projects .card img {
+  border-radius: 10px 10px 0 0;
+}
+#projects .card {
+  position: relative;
+  overflow: hidden;
+}
+#projects .card .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 125%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+#projects .card .img {
+  position: relative;
+  transition: transform 0.5s ease-in;
+  max-width: 400px;
+  height: 400px;
+}
+#projects .card .img1 {
+  background: url('images/projects/meal-finder.jpg') no-repeat center
+    center/cover;
+}
+#projects .card .img2 {
+  background: url('images/projects/netflix.jpg') no-repeat center center/cover;
+}
+#projects .card .img3 {
+  background: url('images/projects/form-validator.jpg') no-repeat center
+    center/cover;
+}
+#projects .card .img4 {
+  background: url('images/projects/hangman-game.jpg') no-repeat center
+    center/cover;
+}
+#projects .card .img1 {
+  background: url('images/projects/meal-finder.jpg') no-repeat center
+    center/cover;
+}
+#projects .card .img1 {
+  background: url('images/projects/meal-finder.jpg') no-repeat center
+    center/cover;
+}
+#projects .card .img::after {
+  content: '';
+  background-color: #ffbc00;
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  left: -200%;
+  top: -200%;
+  opacity: 0.8;
+  transition: all 0.5s ease-in;
+  transform: rotate(-30deg);
+}
+#projects .card:hover .img {
+  transform: scale(1.2);
+}
+#projects .card:hover .img::after {
+  left: -50%;
+  top: -50%;
+}
+#projects .card:hover .content {
+  opacity: 1;
+}
+#projects .card .btn-project {
+  background-color: #fff;
+  color: #ffbc00;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+}
+#projects .card .btn-project:hover {
+  background-color: #333;
+}
+
+/* CONTACT */
+
+#contact {
+  text-align: center;
+}
+form {
+  padding: 1rem 0;
+  width: 60%;
+  margin: -1rem auto;
+}
+form .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+form input,
+form textarea {
+  color: #000;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+form textarea {
+  height: 5rem;
+}
+form input[type='submit'] {
+  background-color: #333;
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+form input[type='submit']:active,
+form input[type='submit']:hover {
+  transform: scale(1.015);
+  background-color: #ffbc00;
+}
+form p {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+
+footer {
+  background-color: #333;
+  padding: 0.5rem 5rem;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2rem;
+}
+footer ul li {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: 2.5px solid #fff;
+  padding: 0.5rem 0.9rem;
+}
+footer ul li:hover {
+  border-color: #ffbc00;
+}
+footer ul li:hover a {
+  color: #ffbc00;
+}
+@media (max-width: 1000px) {
+  #projects .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .intro > h1 {
+    line-height: 1;
+    font-size: 2.5rem;
+    margin: 1.5rem auto;
+  }
+  .intro > h2 {
+    line-height: 1;
+  }
+
+  .intro .buttons > a {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .intro .buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #about .flex,
+  #about .certi li {
+    flex-direction: column;
+  }
+  #about .certi li {
+    text-align: left;
+    align-items: flex-start;
+  }
+  #projects .cards,
+  form .grid {
+    grid-template-columns: 1fr;
+  }
+  form .grid {
+    grid-gap: 0;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  footer ul {
+    justify-content: space-around;
+    margin-right: 0;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  footer ul li {
+    padding: 0.25rem 0.6rem;
+  }
+  footer ul li:last-child {
+    margin-right: 0;
+  }
+}
